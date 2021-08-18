@@ -96,19 +96,113 @@
 /*end about*/
 /**********************************************************/
 /********************&&mohammed&&*************************/
-/*start team*/
+/*Start team*/
+#team{
+    background-color: #F8F9FA;
+    padding: 6rem 0;
+}
+#team h2{
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    padding: 5px;
+    font-weight: 700;
+}
+#team h3{
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+    color: rgb(108, 117, 125);
+    padding: 5px;
+}
+#team .row img{
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+#team .row h4{
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: 700;
+}
+#team a{
+    border-radius: 50%;
+}
+#team i{
+    height: 1em;
+}
+#team #last{
+    margin-top: 50px;
+}
 
-
+.py-5 img{
+    height: 2.75rem;
+}
 /*end team*/
-/**********************************************************/
-/********************&&mohammed&&*************************/
+
+
+
+
+
+
 /*start contact*/
+#contact{
+    background-color: rgb(33, 37, 41);
+    background-image: url(../images/map-image.png);
+    padding: 6rem 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#contact h2{
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    padding: 5px;
+    font-weight: 700;
+    color: #fff;
+}
+#contact h3{
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+    color: rgb(108, 117, 125);
+    padding: 5px;
+}
+#contact form .group{
+    margin-bottom: 1.5rem;
+}
+#contact form .group input{
+    padding: 1.25rem;
+}
+#contact form .group textarea{
+    height: 15rem;
+    padding: 1.25rem;
+}
+#contact button{
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+}
 
-
+#contact form .alert{
+    color: #f00;
+    display: none;
+}
+#contact form .alert span{
+    display: block;
+}
 /*end contact*/
+
 /**********************************************************/
 /********************&&mariam&&*************************/
 /*start footer*/
+
+
 
 
 /*end footer*/
