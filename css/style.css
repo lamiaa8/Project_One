@@ -18,8 +18,73 @@
 
 /*end services*/
 /**********************************************************/
+
+
 /********************&&lamiaa&&*************************/
 /*start portfolio*/
+#portfolio{
+    background-color: #F8F9FA;
+    padding-top: 4em;
+    padding-bottom: 6em;
+}
+#portfolio .prot_top{
+    margin-bottom: 15vh;
+    
+}
+#portfolio  .pra {
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: .2px;
+    color: #1401018a;
+    font-weight: 400 !important;
+    font-size: 18px;
+}
+#portfolio  .p_h{
+    letter-spacing: 2px;
+    font-size: 900 !important;
+    font-weight: 700;
+    
+}
+
+
+
+
+
+#body_prtfolio  .image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+#body_prtfolio .overlay {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    height: 77%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FED136;
+}
+  
+#body_prtfolio a:hover .overlay {
+    opacity: 1;
+}
+  
+#body_prtfolio .text {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 
 
 /*end portfolio*/
