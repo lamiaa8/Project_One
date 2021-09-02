@@ -4,16 +4,295 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
+a:hover{
+    text-decoration: none;
+}
 /*end global*/
 /**********************************************************/
 /********************&&mariam&&*************************/
 /*start header*/
+#header{
+    height:722px;
+    background:url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-position:center center;
+}
+
+#header .site_nav{
+    background: rgba(120, 150, 149, 0) ;
+    transition: all 0.3s ease-in-out;
+}
+
+#header .site_nav .row{
+    flex-wrap: nowrap;
+    padding:0 4vw;
+    max-height:15vh;
+}
+
+#header .site_nav .logo{
+    font-family: Gabriola;
+}
+#header .site_nav .logo a{
+    color:rgb(255 194 74);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size:2.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.logoScroll{
+    font-size:2rem !important;
+
+}
+#header .site_nav .nav a{
+    color:white;
+    text-transform: uppercase;
+    font-size:1rem;
+    transition: all 0.3s ease-in-out;
+    margin-top:7%;
+}
+.linkScroll{
+    font-size: 1rem !important;
+}
+#header .site_nav .nav a:hover{
+    color:rgb(255, 168, 42);
+}
+#header .site_nav .nav li{
+    display: inline-block;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin:0%;
+}
+/*************************/
+/*bar responsive*/
+#header  #bar_res{
+    flex-wrap: nowrap;
+    padding:0 5vw;
+    max-height:15vh;
+    display:none;
+    background-color: #212529;
+    border-bottom: 1px solid rgb(216, 212, 212);
 
 
+}
+
+#header #bar_res .logo_menu a{
+    color:rgb(255 194 74);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size:1.7rem ;
+    transition: all 0.3s ease-in-out;
+    
+}
+#header .logo_menu{
+    font-family: Gabriola;
+    padding-top:2vh;
+
+
+}
+/*************************/
+/*menu button*/
+#header #bar_res .btn{
+    background-color: rgb(179, 174, 179,0);
+    color:#939D9E;
+    border:1px solid #939D9E;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top:7px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 2px;
+
+}
+#header #bar_res .btn:focus{
+    box-shadow:0 0 5px 0.1rem #939D9E !important  ;
+}
+/*************************/
+/*menu bar*/
+#header .menu_bar{
+    height:32vh;
+    width:100%;
+    position:absolute;
+    background-color: #212529;
+    color:rgb(95, 82, 82);
+    top:7vh;
+    left:0;
+    padding:2%;
+   display:none;
+}
+#header .menu_bar .menu_drop a{
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size:0.95rem;
+    transition: all 0.3s ease-in-out;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 2px;
+}
+
+#header .menu_bar .menu_drop a:hover{
+    color:rgb(255, 168, 42);
+}
+#header .menu_bar .menu_drop li{
+    display: block;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin:0%;
+}
+/*************************/
+/*start intro section*/
+#header .intro{
+    position: relative;
+    top:35%;
+    color:white;
+    /*border:1px solid red;*/
+    text-align:center;
+}
+
+
+#header .intro .smhead{
+    font-family:'Droid Serif';
+    text-transform: capitalize;
+    font-style:italic;
+    font-size:2.7rem;
+}
+#header .intro .intro_text{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size:5.3rem;
+    font-weight: bolder;
+}
+
+#header .intro .btn_style{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color:white;
+    padding: 1.25rem 2.5rem;
+    font-size: larger;
+    background-color: #ffc800;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#header .intro .btn_style:hover{
+    background-color: #FFB71D;
+}
+/*end intro section*/
+
+
+/*media for [nav && menu] bar  @ intro text*/
+@media(max-width:1400px)
+{
+    #header .site_nav .row{
+        padding:0 10vw;
+        
+    }
+    #header .site_nav .nav a{
+        font-size:1rem;
+        margin-top:7%;
+    }
+}
+
+@media(max-width:1200px)
+{
+    #header .site_nav .row{
+        padding:0 3vw;
+    }
+    #header .site_nav .nav a{
+        font-size:0.9rem;
+        margin-top:7%;
+    }
+    
+}
+
+@media(max-width:992px)
+{
+    
+    #header .site_nav{
+        display: none;
+    }
+    #header  #bar_res{
+        display:block !important ;
+    }
+    #header .intro .intro_text{
+        font-size:4rem ;
+    }
+
+}
+
+@media(max-width:768px)
+{
+    #header{
+        height:540px;
+    }
+    #header .intro .smhead{
+        font-size:2rem;
+    }
+    #header .intro .intro_text{
+        font-size:3rem ;
+        padding:0 15%;
+
+    }
+
+}
+
+
+/*end header*/
 /*end header*/
 /**********************************************************/
 /********************&&mariam&&*************************/
 /*start services*/
+#services{
+    height:30%;
+    text-align:center;
+    background-color: white;
+    padding-bottom: 10%;
+}
+#services .intro_serv{
+    padding:7% 15%;
+}
+#services .intro_serv h2{
+    font-weight: bolder ;
+    font-size:3rem;
+    text-transform: uppercase;
+    color:#310000;
+}
+#services .intro_serv p{
+    font-family: "Roboto Slab", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style:italic;
+    font-weight: 500;
+    color:#6C768B;
+}
+#services .row .card{
+    border:hidden;
+    padding:5% 0;
+}
+#services .row .card .logo_serv{
+    height:125px;
+    width:9rem;
+    background-color: #FFC800;
+    border-radius: 50% 50%;
+}
+#services .row .card .logo_serv svg{
+    text-align: center;
+    font-size:4rem;
+    margin-top: 2rem;
+    color:white;
+}
+#services .row .card .card-title{
+    text-transform: capitalize;
+    margin:10px 0;
+    font-weight: bold;
+    color:#310000;
+    font-size: 1.7rem;
+}
+#services .row .card .card-text{
+    color:#6C768B;
+}
+
+
 
 
 /*end services*/
@@ -42,11 +321,8 @@
     letter-spacing: 2px;
     font-size: 900 !important;
     font-weight: 700;
-    
+   
 }
-
-
-
 
 
 #body_prtfolio  .image {
@@ -368,7 +644,60 @@
 /**********************************************************/
 /********************&&mariam&&*************************/
 /*start footer*/
+#footer{
+    height:10rem;
+    border: 1px solid paleturquoise;
+    padding:2rem 0 4rem;
+}
 
+
+#footer .footerInfo .footerItem{
+    text-align: center;
+
+}
+#footer .footerInfo .footerItem p,
+#footer .footerInfo .footerItem a{
+    color:#685C67;
+}
+#footer .footerInfo .footerItem .footerLink{
+    list-style: none;
+    padding-top:1rem;
+}
+#footer .footerInfo .footerItem .footerLink .socialLink{
+    width:2rem;
+    height:2rem;
+    background-color: #212529;
+    border-radius: 50% 50%;
+    text-align: center;
+    border: 1px solid rgb(148, 102, 130);
+    margin:0 1rem;
+    
+}
+#footer .footerInfo .footerItem .footerLink .socialLink a{
+    line-height: 2rem;
+    color:white;
+    margin:0 -0.5rem;
+}
+#footer .footerInfo .footerItem .footerTerms{
+    text-decoration: none;
+    margin:0 1rem;
+}
+
+@media(max-width:992px)
+{
+    #footer{
+        height:13rem;
+        padding:2rem 0 4rem 8rem;
+
+    }
+}
+@media(max-width:576px)
+{
+    #footer{
+        padding:2rem 0 4rem 0rem;
+
+    }
+}
 
 
 
